@@ -135,7 +135,7 @@
 
 .two {
     background-color: hsla(39, 100%, 56%, 0.13);
-    animation: 1s ease-out 0s 1 slideRight;
+    animation: 1s ease-out 0s 1 slideDown;
     
 }
 
@@ -156,7 +156,7 @@
 
 .four {
     background-color: hsla(234, 85%, 45%, 0.13);
-    animation: 1s ease-out 0s 1 slideRight;
+    animation: 1s ease-out 0s 1 slideDown;
 }
 
 .four:hover {
@@ -237,7 +237,7 @@
     
 }
 
-@keyframes slideRight {
+@keyframes slideDown {
     0% {
         transform: translateY(-100%);
     }
