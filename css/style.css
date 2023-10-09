@@ -21,6 +21,8 @@
     font-family: 'Hanken Grotesk', sans-serif;
     width: 100;
     padding-bottom: 30px;
+    opacity: 1;
+    animation: fadeIn 2s ease-in;
 }
 
 /* SMALL DEVICES */
@@ -123,6 +125,7 @@
 
 .one {
     background-color: hsla(0, 100%, 67%, 0.103);
+    animation: 1s ease-out 0s 1 slideLeft;
 }
 
 .one:hover {
@@ -132,6 +135,8 @@
 
 .two {
     background-color: hsla(39, 100%, 56%, 0.13);
+    animation: 1s ease-out 0s 1 slideRight;
+    
 }
 
 .two:hover {
@@ -141,6 +146,7 @@
 
 .three {
     background-color: hsla(166, 100%, 37%, 0.123);
+    animation: 1s ease-out 0s 1 slideLeft;
 }
 
 .three:hover {
@@ -150,6 +156,7 @@
 
 .four {
     background-color: hsla(234, 85%, 45%, 0.13);
+    animation: 1s ease-out 0s 1 slideRight;
 }
 
 .four:hover {
@@ -218,4 +225,33 @@
 .button:hover {
     background-color: hsl(224, 30%, 15%);
     transition: 0.8s;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
 }
